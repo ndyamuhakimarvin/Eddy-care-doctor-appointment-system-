@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EddyCare &middot; EddyCare</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link id="theme-font" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style id="theme-vars">:root{--primary:#2563eb;--primary-dark:#1f54c8;--primary-soft:rgba(37,99,235,.10);--accent:#10b981;--bg:#f4f6fb;--sidebar-bg:#0f172a;--sidebar-text:#cbd5e1;--font:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif}</style><link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<div class="site">
+<header class="navbar">
+  <div class="navbar-inner">
+    <a class="site-brand" href="index.php">
+      <span class="brand-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+      <span><b>EddyCare</b><small>Doctor Appointment Booking</small></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#" class="nav-link" data-page="home"><i class="fa-solid fa-house"></i> Home</a>      <a href="#" class="nav-link" data-page="doctors"><i class="fa-solid fa-user-doctor"></i> Doctors</a>      <a href="#" class="nav-link" data-page="booking"><i class="fa-solid fa-calendar-plus"></i> Book Appointment</a>      <a href="#" class="nav-link" data-page="feedback"><i class="fa-solid fa-star"></i> Feedback</a>      
+      <div class="nav-auth-mobile">
+              <a href="login.php" class="nav-link"><i class="fa-solid fa-right-to-bracket"></i> Log in</a>
+        <a href="register.php" class="nav-link"><i class="fa-solid fa-user-plus"></i> Register</a>
+            </div>
+    </nav>
+
+    <div class="navbar-right">
+              <a class="btn btn-ghost btn-sm nav-auth-desktop" href="login.php">Log in</a>
+        <a class="btn btn-sm nav-auth-desktop" href="register.php">Register</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+  <main class="content">
+    
+<!-- HOME -->
+<section id="home" class="page">
+  <div class="hero">
+    <h1>Find &amp; Book Appointments with Top Doctors</h1>
+    <p>Experience seamless healthcare with our modern booking system. Connect with specialized doctors and schedule appointments at your convenience.</p>
+    <div class="hero-actions">
+      <a href="#" class="btn btn-light" data-page="doctors"><i class="fa-solid fa-user-doctor"></i> Find Doctors</a>
+      <a href="#" class="btn btn-outline" data-page="booking"><i class="fa-solid fa-calendar-plus"></i> Book Now</a>
+    </div>
+  </div>
+  <div class="card-3d">
+    <div class="card-head"><h2>Why Choose EddyCare?</h2></div>
+    <div class="grid">
+      <div class="feature"><i class="fa-solid fa-bolt"></i><h3>Easy Booking</h3><p>Book appointments in just a few clicks with our intuitive interface.</p></div>
+      <div class="feature"><i class="fa-solid fa-user-shield"></i><h3>Verified Doctors</h3><p>All our doctors are thoroughly verified and highly qualified.</p></div>
+      <div class="feature"><i class="fa-solid fa-headset"></i><h3>24/7 Support</h3><p>Our support team is available round the clock to assist you.</p></div>
+      <div class="feature"><i class="fa-solid fa-envelope-circle-check"></i><h3>Email Updates</h3><p>You and your doctor are notified by email at every step.</p></div>
+    </div>
+  </div>
+  <div class="card-3d">
+    <div class="card-head"><h2>Our Specialties</h2></div>
+    <div class="grid">
+              <div class="specialty"><span class="emoji">🫀</span><h3>Cardiologist</h3></div>
+              <div class="specialty"><span class="emoji">🧠</span><h3>Neurologist</h3></div>
+              <div class="specialty"><span class="emoji">👶</span><h3>Pediatrician</h3></div>
+              <div class="specialty"><span class="emoji">🦷</span><h3>Dentist</h3></div>
+          </div>
+  </div>
+</section>
+
+<!-- DOCTORS -->
+<section id="doctors" class="page">
+  <div class="doctor-grid">
+        <div class="doctor-card">
+      <div class="doctor-image">
+        🫀      </div>
+      <h2>Dr. Eddy Kreins</h2>
+      <span class="doctor-specialty">Cardiologist</span>
+      <div class="rating"><span class="stars">★★★★★</span><span>4.9 (128 reviews)</span></div>
+      <p class="doctor-bio">Board-certified cardiologist with over 15 years of experience, specialising in interventional cardiology with over 2,000 successful procedures.</p>
+      <a href="#" class="btn" data-page="booking" data-doctor="1"><i class="fa-solid fa-calendar-plus"></i> Book Appointment</a>
+    </div>
+        <div class="doctor-card">
+      <div class="doctor-image">
+        🧠      </div>
+      <h2>Dr. Owomugisha Darius</h2>
+      <span class="doctor-specialty">Neurologist</span>
+      <div class="rating"><span class="stars">★★★★★</span><span>4.9 (95 reviews)</span></div>
+      <p class="doctor-bio">Renowned neurologist with expertise in treating complex neurological disorders and numerous published research papers.</p>
+      <a href="#" class="btn" data-page="booking" data-doctor="2"><i class="fa-solid fa-calendar-plus"></i> Book Appointment</a>
+    </div>
+        <div class="doctor-card">
+      <div class="doctor-image">
+        👶      </div>
+      <h2>Dr. Olibo Edward</h2>
+      <span class="doctor-specialty">Pediatrician</span>
+      <div class="rating"><span class="stars">★★★★☆</span><span>4.2 (202 reviews)</span></div>
+      <p class="doctor-bio">Dedicated to pediatric care, known for a compassionate approach and expertise in childhood development and vaccinations.</p>
+      <a href="#" class="btn" data-page="booking" data-doctor="3"><i class="fa-solid fa-calendar-plus"></i> Book Appointment</a>
+    </div>
+        <div class="doctor-card">
+      <div class="doctor-image">
+        🦷      </div>
+      <h2>Dr. Tazenya Emmanuel</h2>
+      <span class="doctor-specialty">Dentist</span>
+      <div class="rating"><span class="stars">★★★★★</span><span>4.6 (95 reviews)</span></div>
+      <p class="doctor-bio">Renowned dentist with expertise in treating complex tooth conditions and published research.</p>
+      <a href="#" class="btn" data-page="booking" data-doctor="4"><i class="fa-solid fa-calendar-plus"></i> Book Appointment</a>
+    </div>
+      </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="page">
+      <div class="alert alert-info"><i class="fa-solid fa-circle-info"></i><div>Please <a href="login.php"><strong>log in</strong></a> or <a href="register.php"><strong>create an account</strong></a> to book an appointment.</div></div>
+    <div class="card-3d">
+    <div class="card-head"><h2>For Customer Care Services</h2></div>
+    <div class="contact-info">
+      <div class="contact-item"><div class="contact-icon"><i class="fa-solid fa-phone"></i></div><div><small>Phone</small>+256 780549182<br>+256 706978597</div></div>
+      <div class="contact-item"><div class="contact-icon"><i class="fa-solid fa-envelope"></i></div><div><small>Email</small><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="771213130e1416051237101a161e1b5914181a">[email&#160;protected]</a></div></div>
+      <div class="contact-item"><div class="contact-icon"><i class="fa-solid fa-building"></i></div><div><small>Address</small>123 Eddy Plaza, Kampala City, Plot No 24</div></div>
+      <div class="contact-item"><div class="contact-icon"><i class="fa-solid fa-clock"></i></div><div><small>Hospital Hours</small>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 2:00 PM</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEEDBACK -->
+<section id="feedback" class="page">
+  <div class="card-3d">
+    <div class="card-head"><div><h2>Submit Feedback</h2><p>We value your opinion. Please share your experience with our services to help us improve.</p></div></div>
+    <form action="feedback_submit.php" method="post">
+      <div class="form-row">
+        <div class="form-group"><label>Your Name</label><input class="form-control" name="name" value="" required></div>
+        <div class="form-group"><label>Doctor (Optional)</label>
+          <select class="form-control" name="doctor_id"><option value="">Select a doctor</option>
+            <option value="1">Dr. Eddy Kreins</option><option value="2">Dr. Owomugisha Darius</option><option value="3">Dr. Olibo Edward</option><option value="4">Dr. Tazenya Emmanuel</option>          </select></div>
+      </div>
+      <div class="form-group"><label>Overall Rating</label>
+        <div class="rating-input">
+                      <input type="radio" id="star5" name="rating" value="5" required><label for="star5">★</label>
+                      <input type="radio" id="star4" name="rating" value="4" ><label for="star4">★</label>
+                      <input type="radio" id="star3" name="rating" value="3" ><label for="star3">★</label>
+                      <input type="radio" id="star2" name="rating" value="2" ><label for="star2">★</label>
+                      <input type="radio" id="star1" name="rating" value="1" ><label for="star1">★</label>
+                  </div></div>
+      <div class="form-group"><label>Your Feedback</label><textarea class="form-control" name="message" placeholder="Please share your experience with us..." required></textarea></div>
+      <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Submit Feedback</button>
+    </form>
+  </div>
+  <div class="card-3d">
+    <div class="card-head"><h2>Recent Patient Feedback</h2></div>
+    <div style="display:grid;gap:1rem">
+                    <div class="review">
+          <div class="review-head"><strong>Nabaale aisha</strong><span class="stars">★★★☆☆</span></div>
+          <p>"Thanks for ur services"</p>
+        </div>
+              <div class="review">
+          <div class="review-head"><strong>Mugisha Enock</strong><span class="stars">★★★★★</span></div>
+          <p>"thank you for services"</p>
+        </div>
+              <div class="review">
+          <div class="review-head"><strong>Mugisha Enock</strong><span class="stars">★★★★★</span></div>
+          <p>"I&#039;m now doing well, otherwise thank you for your servises"</p>
+        </div>
+          </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><b>EddyCare</b><p>Doctor Appointment Booking &mdash; your trusted partner in healthcare.</p></div>
+      <div><b>Contact</b><p><i class="fa-solid fa-phone"></i> +256 780549182<br><i class="fa-solid fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6c3c2c2dfc5c7d4c3e6c1cbc7cfca88c5c9cb">[email&#160;protected]</a></p></div>
+      <div><b>Visit us</b><p><i class="fa-solid fa-location-dot"></i> 123 Eddy Plaza, Kampala City, Plot No 24</p></div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 EddyCare. All rights reserved.</div>
+  </footer>
+</div><!-- .site -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function () {
+  var b = document.body, t = document.getElementById('menuToggle'), o = document.getElementById('sidebarOverlay');
+  if (t) t.addEventListener('click', function () { b.classList.toggle('nav-open'); });
+  if (o) o.addEventListener('click', function () { b.classList.remove('nav-open'); });
+  document.querySelectorAll('.sidebar .nav-item, .nav-links .nav-link').forEach(function (a) { a.addEventListener('click', function () { b.classList.remove('nav-open'); }); });
+})();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const triggers = document.querySelectorAll('[data-page]');
+  const pages = document.querySelectorAll('.page');
+  const titles = {"home":"Welcome","doctors":"Our Doctors","booking":"Book Appointment","feedback":"Feedback"};
+  const pageTitle = document.getElementById('pageTitle');
+
+  function show(pageId) {
+    pages.forEach(p => p.classList.toggle('active', p.id === pageId));
+    triggers.forEach(l => { if (l.classList.contains('nav-link')) l.classList.toggle('active', l.dataset.page === pageId); });
+    document.title = (titles[pageId] || '') + ' | ' + "EddyCare";
+    window.scrollTo(0, 0);
+  }
+  triggers.forEach(link => link.addEventListener('click', function (e) {
+    e.preventDefault();
+    show(this.dataset.page);
+    if (this.dataset.doctor) {
+      const sel = document.getElementById('doctor-select');
+      if (sel) { sel.value = this.dataset.doctor; loadSlots(); }
+    }
+  }));
+  show("home");
+
+  const dateInput = document.getElementById('appointment-date');
+  const doctorSel = document.getElementById('doctor-select');
+  const timeInput = document.getElementById('appointment-time');
+  const slotEls = document.querySelectorAll('.time-slot');
+
+  if (dateInput) {
+    dateInput.min = new Date().toISOString().split('T')[0];
+    slotEls.forEach(slot => slot.addEventListener('click', function () {
+      if (this.classList.contains('taken')) return;
+      slotEls.forEach(s => s.classList.remove('selected'));
+      this.classList.add('selected');
+      timeInput.value = this.dataset.time;
+    }));
+    dateInput.addEventListener('change', loadSlots);
+    doctorSel.addEventListener('change', loadSlots);
+
+    document.getElementById('booking-form').addEventListener('submit', function (e) {
+      if (!timeInput.value) { e.preventDefault(); alert('Please select a time slot.'); }
+    });
+  }
+
+  function loadSlots() {
+    if (!doctorSel.value || !dateInput.value) return;
+    timeInput.value = '';
+    slotEls.forEach(s => s.classList.remove('selected', 'taken'));
+    fetch('slots.php?doctor_id=' + encodeURIComponent(doctorSel.value) + '&date=' + encodeURIComponent(dateInput.value))
+      .then(r => r.json())
+      .then(taken => slotEls.forEach(s => { if (taken.includes(s.dataset.time)) s.classList.add('taken'); }));
+  }
+});
+</script>
+</body>
+</html>
